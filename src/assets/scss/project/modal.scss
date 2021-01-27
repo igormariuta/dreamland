@@ -1,0 +1,56 @@
+.modal-project {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 0 !important;
+  max-width: 100%;
+  z-index: 100;
+  overflow-y: auto;
+  background: transparent;
+  background: rgba(25, 25, 25, 0.95);
+  opacity: 1;
+  animation: show .3s ease;
+
+  .close {
+    position: fixed;
+    cursor: pointer;
+    right: 40px;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+    // background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      font-size: 25px;
+      color: var(--color-text-light);
+    }
+  }
+
+  .page {
+    margin-top: 0 !important;
+  }
+
+  .page-title__project__info {
+    color: var(--color-text-light);
+  }
+
+  .page-title__project__user {
+    color: var(--color-text-light);
+  }
+
+  @keyframes show {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+

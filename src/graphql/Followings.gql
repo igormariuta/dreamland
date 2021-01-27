@@ -1,0 +1,7 @@
+query ($where: JSON!) {
+  followers(where: $where) {
+    user {
+      id
+    }
+  }
+}

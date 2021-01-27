@@ -1,0 +1,7 @@
+mutation ($input: createFollowerInput!) {
+  createFollower(input: $input) {
+    follower {
+      id
+    }
+  }
+}

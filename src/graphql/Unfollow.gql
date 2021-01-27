@@ -1,0 +1,7 @@
+mutation ($input: deleteFollowerInput!) {
+  deleteFollower(input: $input) {
+    follower {
+      id
+    }
+  }
+}

@@ -1,0 +1,33 @@
+query ($id: ID!) {
+  project(id: $id) {
+    id, 
+    title,
+    overview,
+    num_views,
+    num_likes,
+    project_type,
+    created_at,
+    owner {
+      id,
+      username, 
+      picture {
+        url
+      }
+    }, 
+    images {
+      id,
+      url
+    },
+    comments {
+			id,
+      text,
+      created_at,
+      owner {
+        username,
+        picture {
+          url
+        }
+      }
+    }
+  }
+}

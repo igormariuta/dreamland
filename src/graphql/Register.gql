@@ -1,0 +1,9 @@
+mutation ($input: UserInput!) {
+  register(input: $input) {
+    user {
+      id,
+      username
+    },
+    jwt 
+  }
+}

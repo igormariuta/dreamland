@@ -1,0 +1,167 @@
+.header {
+  background: var(--color-back-dark);
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  // left: 90px;
+  z-index: 100;
+  padding: 0 40px;
+
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;    
+
+    a {
+      display: block;
+      width: 40px;
+      height: 40px;
+      background: url('../img/logo.svg') no-repeat center;
+      background-size: 40px 40px;
+    }
+   
+  }
+
+  &__nav {
+    margin-right: 15px;
+
+    &__ul {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__link {
+      // padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: 600;
+      color: var(--color-text-gray);
+      transition: color .3s ease;
+
+      &:hover {
+        color: var(--color-text-light);
+      }
+
+      &.router-link-exact-active {
+        color: var(--color-text-light);
+      }
+
+    }
+
+  }
+
+  &__search {
+
+    // min-width: calc(100% - 460px);
+    // padding: 0 30px;
+    display: flex;
+    align-items: center;
+    // margin-left: auto;
+
+    svg.search-icon {
+      // position: absolute;
+      left: 25px;
+      height: 40px;
+      color: var(--color-text-light);
+    }
+
+
+    form {
+      // margin-left: auto;
+      position: relative;
+      // width: 50%;
+      min-width: 400px;
+      display: none;
+
+      svg {
+        left: 25px;
+        height: 40px;
+      }
+
+      input {
+        width: 100%;
+        background: #f6f6f6;
+        border: none;
+        border-radius: 5px;
+        height: 40px;
+        padding: 10px 30px 10px 60px;
+        font-family: inherit;
+
+        &::placeholder {
+          color: var(--color-text-light);
+        }
+        
+      }
+
+    }
+
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    margin-left: auto;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+  }
+
+  &__action {
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    color: var(--color-text-light);
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+
+    // &.notification {
+    //   position: relative;
+    //   color: var(--color-primary);
+    // }
+
+    &--add-project {
+      background: var(--color-primary);
+      font-size: 10px;
+    }
+
+  }
+
+  // 
+
+  &__user {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    max-width: 230px;
+
+    &__image {
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      background: var(--color-text-dark-2);
+    }
+
+    // .name {
+    //   margin-left: 10px;
+    //   font-weight: 600;
+    //   white-space: nowrap;
+    //   overflow: hidden;
+    //   text-overflow: ellipsis;
+    // }
+
+  }
+
+ 
+}

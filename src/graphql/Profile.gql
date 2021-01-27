@@ -1,0 +1,38 @@
+query ($id: ID!) {
+  user(id: $id) {
+    id, 
+    username,
+    occupation,
+    location,
+    picture {
+      url
+    },
+    followers {
+      id,
+      follower {
+        id
+      }
+    }
+    about,
+    created_at,
+    projects {
+      id,
+      title,
+      preview {
+        url
+      },
+      owner {
+        id,
+        username
+        picture {
+          url
+        }
+      },
+      num_views,
+      num_likes
+    },
+    # social_behance,
+    # social_dribbble,
+    # social_instagram
+  }
+}
